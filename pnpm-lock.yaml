@@ -45,6 +45,9 @@ devDependencies:
   eslint:
     specifier: ^8.38.0
     version: 8.38.0
+  husky:
+    specifier: ^8.0.3
+    version: 8.0.3
   typescript:
     specifier: ^4.9.3
     version: 4.9.3
@@ -2367,6 +2370,12 @@ packages:
       domhandler: 5.0.3
       domutils: 3.0.1
       entities: 4.5.0
+    dev: true
+
+  /husky@8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /ignore@5.2.4:
