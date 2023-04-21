@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button, Result } from 'antd'
 import { useNavigate } from 'react-router-dom'
 
@@ -12,7 +11,7 @@ function NotFound() {
       <Result
         status="404"
         title="404"
-        subTitle="页面不存在"
+        subTitle="页面不存在1"
         extra={
           <Button type="primary" onClick={goHome}>
             Back Home
