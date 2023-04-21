@@ -1,12 +1,12 @@
-import React from "react";
-import { Result, Button } from "antd";
-import { useNavigate } from "react-router-dom";
+import React from 'react'
+import { Button, Result } from 'antd'
+import { useNavigate } from 'react-router-dom'
 
 function NotFound() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const goHome = () => {
-    navigate("/");
-  };
+    navigate('/')
+  }
   return (
     <div>
       <Result
@@ -20,7 +20,7 @@ function NotFound() {
         }
       />
     </div>
-  );
+  )
 }
 
-export default NotFound;
+export default NotFound

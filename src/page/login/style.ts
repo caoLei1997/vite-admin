@@ -1,6 +1,6 @@
-import Styled from "styled-components";
+import styled from 'styled-components'
 
-export const LoginContainer = Styled.div`
+export const LoginContainer = styled.div`
     position: relative;
     min-height: 100vh;
     background: red;
@@ -10,13 +10,19 @@ export const LoginContainer = Styled.div`
     align-items:center;
     background:#eee;
     flex-direction: column;
-    padding-top: 20vh;
+    padding-top: 25vh;
+    background-image: url('/bg.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+ 
    
     .form{
         width: 500px;
         padding: 25px;
         background-color: #fff;
         border-radius: 20px;
+        z-index: 999;
 
         .title{
             width: 500px;
@@ -24,4 +30,4 @@ export const LoginContainer = Styled.div`
             padding: 12px 0 20px;
         }
     }
-`;
+`

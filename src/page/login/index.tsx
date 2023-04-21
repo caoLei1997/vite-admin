@@ -1,11 +1,12 @@
-import { Form, Input, Button } from "antd";
-import { UserOutlined, LockOutlined } from "@ant-design/icons";
-import { LoginContainer } from "./style";
+import { Button, Form, Input } from 'antd'
+import { LockOutlined, UserOutlined } from '@ant-design/icons'
+import { LoginContainer } from './style'
+import CanvasBg from '@/components/canvas'
 
 function Login() {
-  const [form] = Form.useForm();
+  const [form] = Form.useForm()
   const handleFinish = () => {
-  };
+  }
   return (
     <LoginContainer>
       <div className="form">
@@ -20,11 +21,11 @@ function Login() {
         >
           <Form.Item
             name="username"
-            rules={[{ required: true, message: "请输入用户名" }]}
+            rules={[{ required: true, message: '请输入用户名' }]}
           >
             <Input placeholder="请输入用户名" prefix={<UserOutlined />} />
           </Form.Item>
-          <Form.Item name='password' rules={[{ required: true, message: "请输入用户密码" }]}>
+          <Form.Item name='password' rules={[{ required: true, message: '请输入用户密码' }]}>
             <Input.Password placeholder="请输入用户密码" prefix={<LockOutlined />} />
           </Form.Item>
           <Form.Item>
@@ -32,8 +33,9 @@ function Login() {
           </Form.Item>
         </Form>
       </div>
+      <CanvasBg/>
     </LoginContainer>
-  );
+  )
 }
 
-export default Login;
+export default Login
