@@ -1,6 +1,7 @@
 {
   "extends": ["@antfu/eslint-config"],
   "rules": {
-    "no-conso": 1
+    "no-conso": 0,
+    "no-mixed-operators": 0
   }
 }

@@ -50,6 +50,5 @@ export class Circle {
       ctx.strokeStyle = 'rgba(204,204,204,0.4)'
       ctx.stroke()
     }
-    // console.log(d);
   }
 }
